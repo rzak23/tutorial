@@ -16,6 +16,10 @@ class M_welcome extends CI_Model {
 		return $this->db->get($table)->row_array();
 	}
 
+	public function create_user($data,$table){
+		$this->db->insert($table,$data);
+	}
+
 }
 
 /* End of file M_welcom.php */
